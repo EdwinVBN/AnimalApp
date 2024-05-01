@@ -1,14 +1,55 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet, Text, View, ScrollView, TouchableOpacity, Image } from 'react-native';
 import { animals } from './animals.json';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
+const Stack = createStackNavigator();
+
+function AnimalDetailsScreen({ route }) {
+  const { animal } = route.params;
+  return (
+    <View style={styles.detialsContainer}>
+      <Image source={{ uri: animal.imageSource }} style={styles.detialsImage} />
+      <View style={styles.textContainer}>
+        <Text style={styles.textTitel}>{animal.name}</Text>
+        <Text style={styles.detialsText}>{animal.description}</Text>
+      </View>
+    </View>
+  );
+}
 
 export default function App() {
   return (
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: '#2C2C2C',
+          },
+          headerTintColor: '#FFFFFF',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+      >
+        <Stack.Screen name="AnimalGallery" component={AnimalGalleryScreen} options={{ title: 'Animal Gallery' }} />
+        <Stack.Screen name="AnimalDetails" component={AnimalDetailsScreen} options={{ title: 'Animal Details' }} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+function AnimalGalleryScreen({ navigation }) {
+  const handleAnimalPress = (animal) => {
+    navigation.navigate('AnimalDetails', { animal });
+  };
+  
+  return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
+      {/* <View style={styles.header}>
         <Text style={styles.headerText}>Animal Gallery</Text>
-      </View>
+      </View> */}
       <ScrollView style={styles.scrollview}>
         <View style={styles.animalContainer}>
           {
@@ -22,10 +63,6 @@ export default function App() {
       </ScrollView>
     </SafeAreaView>
   );
-}
-
-const handleAnimalPress = (animal) => {
-  console.log("Pressed", animal.name);
 }
 
 const styles = StyleSheet.create({
@@ -66,9 +103,48 @@ const styles = StyleSheet.create({
     marginBottom: 25,
     borderRadius: 5,
     borderStyle: 'solid',
-    borderWidth: 3,
-    borderColor: '#2C2C2C',
+    borderWidth: 1,
+    borderColor: '#FFFFFF',
+  },
+  detialsContainer: {
+    flex: 1,
+    backgroundColor: '#1A1A1A',
+    flexDirection: 'column',
+    gap: 25,
+    alignItems: 'center',
 
   },
+  detialsImage: {
+    height: '45%',
+    width: '90%',
+    marginBottom: 25,
+    borderRadius: 5,
+    borderStyle: 'solid',
+    borderWidth: 1,
+    borderColor: '#FFFFFF',
+    marginTop: 30,
+  },
+  textContainer: {
+    backgroundColor: '#2C2C2C',
+    flexDirection: 'column',
+    gap: 25,
+    alignItems: 'center',
+    padding: '3%',
+    borderRadius: 15,
+    width: '90%',
+    borderStyle: 'solid',
+    borderWidth: 1,
+    borderColor: '#FFFFFF',
+  },
+  textTitel: {
+    fontSize: '32%',
+    color: 'white',
+    fontWeight: 'bold',
+  },
+  detialsText: {
+    color: 'white',
+    fontSize: '16%',
+    textAlign: 'center',
+  }
 
 });
