@@ -13,9 +13,6 @@ export default function App() {
         <View style={styles.animalContainer}>
           {
             animals.map((animal) => (
-              // <View key={animal.name}>
-              //   <Text>{animal.name}</Text>
-              // </View>
               <TouchableOpacity key={animal.name} onPress={() => handleAnimalPress(animal)}>
                 <Image source={{uri: animal.imageSource}} style={styles.animalImage} />
               </TouchableOpacity>
