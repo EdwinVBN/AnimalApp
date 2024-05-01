@@ -1,0 +1,104 @@
+{
+  "animals": [
+    {
+      "name": "Salmon",
+      "description": "The salmon is a species of fish native to freshwater and saltwater habitats. It is known for its distinctive pink flesh and ability to swim upstream to spawn.",
+      "imageSource": "https://www.fisheries.noaa.gov/s3//styles/full_width/s3/dam-migration/750x500-coho-salmon.jpg?itok=lan8JjNI"
+    },
+    {
+      "name": "Elephant",
+      "description": "The elephant is the largest land animal. It is known for its trunk, tusks, and large ears.",
+      "imageSource": "https://cdn.mos.cms.futurecdn.net/uiCrUgVCf64TzEdTM8x9aD-1200-80.jpg"
+    },
+    {
+      "name": "Tiger",
+      "description": "The tiger is a powerful carnivore and is the largest cat species. It has distinctive orange fur with black stripes.",
+      "imageSource": "https://media.4-paws.org/5/4/4/c/544c2b2fd37541596134734c42bf77186f0df0ae/VIER%20PFOTEN_2017-10-20_164-3854x2667-1920x1329.jpg"
+    },
+    {
+      "name": "Giraffe",
+      "description": "The giraffe is the tallest living terrestrial animal. It has a long neck, spotted coat, and distinctive horns.",
+      "imageSource": "https://www.wildlands.nl/uploads/animals/social_og_image/1200x630/noordelijke-giraffe.jpg"
+    },
+    {
+      "name": "Zebra",
+      "description": "The zebra is a wild horse species known for its black and white stripes.",
+      "imageSource": "https://d33b12c77av9bg.cloudfront.net/cache/md_43/grant-zebra-beekse-bergen-safaripark.jpg"
+    },
+    {
+      "name": "Penguin",
+      "description": "The penguin is a flightless bird that is mostly found in the Southern Hemisphere. It is known for its black and white coloration.",
+      "imageSource": "https://c02.purpledshub.com/uploads/sites/62/2022/06/5014474-12693ff.jpg?w=1029&webp=1"
+    },
+    {
+      "name": "Kangaroo",
+      "description": "The kangaroo is a marsupial found in Australia. It is known for its powerful hind legs and pouch for carrying young.",
+      "imageSource": "https://cdn.mos.cms.futurecdn.net/ETb2xLjvc62eb7PPLspSsU-1200-80.jpg"
+    },
+    {
+      "name": "Gorilla",
+      "description": "The gorilla is the largest primate and is native to Africa. It is known for its strength and intelligence.",
+      "imageSource": "https://cdn.britannica.com/79/20279-050-ECDF21A7/mountain-gorilla-Virunga-National-Park-Democratic-Republic.jpg"
+    },
+    {
+      "name": "Hippo",
+      "description": "The hippopotamus is a large, mostly herbivorous mammal found in sub-Saharan Africa. It is known for its large size and aggressive behavior.",
+      "imageSource": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNzmXaXKVCEsx7f-jVfbU2okfS15gfEw_XgBnNP6eOVw&s"
+    },
+    {
+      "name": "Panda",
+      "description": "The giant panda is a bear native to south central China. It is known for its distinctive black and white coat and its diet of bamboo.",
+      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/440px-Grosser_Panda.JPG"
+    },
+    {
+      "name": "Dolphin",
+      "description": "The dolphin is a highly intelligent marine mammal known for its playful behavior and communication abilities.",
+      "imageSource": "https://d1jyxxz9imt9yb.cloudfront.net/animal/143/meta_image/regular/MC_20180821_FRA_BeautyShots_005_334599_reduced.jpg"
+    },
+    {
+      "name": "Polar Bear",
+      "description": "The polar bear is a large bear native to the Arctic. It is adapted to living in cold environments and is a powerful predator.",
+      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg/440px-Polar_Bear_-_Alaska_%28cropped%29.jpg"
+    },
+    {
+      "name": "Koala",
+      "description": "The koala is a marsupial found in Australia. It is known for its diet of eucalyptus leaves and its sleepy demeanor.",
+      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/440px-Koala_climbing_tree.jpg"
+    },
+    {
+      "name": "Crocodile",
+      "description": "The crocodile is a large reptile found in tropical regions. It is known for its powerful jaws and ability to ambush prey.",
+      "imageSource": "https://cdn.britannica.com/13/151913-050-6B9CD5F3/Nile-crocodile-fish.jpg"
+    },
+    {
+      "name": "Rabbit",
+      "description": "The rabbit is a small mammal known for its long ears, hopping gait, and ability to reproduce quickly.",
+      "imageSource": "https://www.hindustantimes.com/ht-img/img/2023/10/03/1600x900/rabbit_1696312911044_1696312923814.jpg"
+    },
+    {
+      "name": "Sloth",
+      "description": "The sloth is a slow-moving mammal found in the forests of Central and South America. It is known for its relaxed lifestyle and slow metabolism.",
+      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/b/be/Bicho-pregui%C3%A7a_3.jpg"
+    },
+    {
+      "name": "Ostrich",
+      "description": "The ostrich is the largest bird in the world and is native to Africa. It is known for its long neck and fast running speed.",
+      "imageSource": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/221510791/900"
+    },
+    {
+      "name": "Pangolin",
+      "description": "The pangolin is a mammal covered in scales found in Asia and Africa. It is known for its unique appearance and its status as the most trafficked mammal in the world.",
+      "imageSource": "https://res.cloudinary.com/digicomm/image/upload/t_metadata/news-magazine/2023/_assets/istock-675014092.jpg"
+    },
+    {
+      "name": "Cheetah",
+      "description": "The cheetah is the fastest land animal and is native to Africa and parts of Iran. It is known for its slender build and distinctive black spots.",
+      "imageSource": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOHkZUhQRnNcBu1zZQCHLFIF3ygaubeg-0FZ4EsXPI_Q&s"
+    },
+    {
+      "name": "Llama",
+      "description": "The llama is a domesticated South American camelid known for its woolly coat and use as a pack animal.",
+      "imageSource": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMAlIpfXLabmF4HryLAT-nM0tFSLgn-rukkDOCIvlKfg&s"
+    }
+  ]
+}
