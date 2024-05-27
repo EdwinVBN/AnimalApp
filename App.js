@@ -47,9 +47,6 @@ function AnimalGalleryScreen({ navigation }) {
   
   return (
     <SafeAreaView style={styles.container}>
-      {/* <View style={styles.header}>
-        <Text style={styles.headerText}>Animal Gallery</Text>
-      </View> */}
       <ScrollView style={styles.scrollview}>
         <View style={styles.animalContainer}>
           {
