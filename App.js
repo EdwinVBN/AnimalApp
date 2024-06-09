@@ -49,6 +49,7 @@ function AnimalGalleryScreen({ navigation }) {
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollview}>
         <View style={styles.animalContainer}>
+          
           {
             animals.map((animal) => (
               <TouchableOpacity key={animal.name} onPress={() => handleAnimalPress(animal)}>
